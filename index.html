@@ -95,7 +95,7 @@
                     </div>
                 </div>
             </div>
-            <button class="btn-style">Book Now</button>
+            <button onclick="booked()" class="btn-style">Book Now</button>
         </div>
 
         <div class="booking-content">
@@ -165,6 +165,9 @@
                 document.getElementById("sub-total").innerText = subTotal;
                 document.getElementById('tax').innerText = Math.ceil(totalTax);
                 document.getElementById('total').innerText = Math.ceil(totalAmount);
+            }
+            function booked() {
+                alert("your booking is done");
             }
 
         </script>
